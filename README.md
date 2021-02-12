@@ -8,7 +8,7 @@ A ideia foi conseguir cadastrar pessoas, seus dados de contato e criar uma dinâ
 
 Foi utilizado como SGBD (Sistema Gerenciador de Banco de Dados) o *`PostgreSql`*. 
 
-Para gerar um projeto com as dependencias já incluidas utilizei o site [Spring ](https://start.spring.io/) e em dependencies adicionei a dependencia web que utiliza *`Spring MVC`*, a dependencia JPA que utiliza *`Spring Data JPA`* e a dependencia *`PostgreSQL Driver`* que faz a conexão com o banco de dados através do JDBC. Além dessas adicionei a dependencia do *`Bean Validation`* para validar os campos antes de inserir no banco.
+Para gerar um projeto com as dependencias já incluidas utilizei o site [Spring Initializr](https://start.spring.io/) e em dependencies adicionei a dependencia web que utiliza *`Spring MVC`*, a dependencia JPA que utiliza *`Spring Data JPA`* e a dependencia *`PostgreSQL Driver`* que faz a conexão com o banco de dados através do JDBC. Além dessas adicionei a dependencia do *`Bean Validation`* para validar os campos antes de inserir no banco.
 
 Para realizar a conexão com o banco é necessário criar um DATABASE no PostgreSQL e em seguida ir no arquivo *`application.properties`* e modificar a URL, o username e a senha.
 
@@ -20,8 +20,6 @@ Para fazer alguma atualização é necessário informar todos os campos e mudar 
 
 ------------------------------------
 
-##Autor
-
--Yuri Ranieri
-
--yurifranieri@gmail.com
+## Autor
+- Yuri Ranieri
+- yurifranieri@gmail.com
