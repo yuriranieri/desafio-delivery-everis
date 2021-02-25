@@ -14,28 +14,28 @@ public class CreateClientDto {
 	@NotNull
 	@NotEmpty
 	private String name;
-	
+
 	@NotNull
 	private List<AddressEntity> address;
-	
-	@NotNull 
+
+	@NotNull
 	@NotEmpty
 	private String phone;
-	
-	@NotNull 
+
+	@NotNull
 	@NotEmpty
 	private String email;
-	
-	@NotNull 
+
+	@NotNull
 	@NotEmpty
 	private String cpf;
-	
+
 	@NotNull
 	private PaymentType payment;
-	
+
 	public CreateClientDto() {
 	}
-	
+
 	public CreateClientDto(ClientEntity client) {
 		this.name = client.getName();
 		this.address = client.getAddress();
@@ -70,7 +70,8 @@ public class CreateClientDto {
 	}
 
 	public ClientEntity convert(CreateClientDto form) {
-		return new ClientEntity(form.getName(), form.getAddress(), form.getPhone(), form.getEmail(), form.getCpf(), form.getPayment());
+		return new ClientEntity(form.getName(), form.getAddress(), form.getPhone(), form.getEmail(), form.getCpf(),
+				form.getPayment());
 	}
 
 }

@@ -3,6 +3,8 @@ package br.com.delivery.dto;
 import javax.validation.constraints.NotNull;
 
 public class ItemDto {
+	
+	private Long id;
 
 	@NotNull
 	private long productId;
@@ -31,6 +33,14 @@ public class ItemDto {
 	
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
+	}
+	
+	public Long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 }
